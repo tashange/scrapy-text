@@ -6,11 +6,9 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-class DouyuItem(scrapy.Item):
+
+
+class Jb51Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-     # 主播昵称
-    nickname = scrapy.Field()
-    # 图片链接
-    imagelink = scrapy.Field()
-    # pass
+    pass

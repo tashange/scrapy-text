@@ -10,7 +10,7 @@ class DouyuSpider(scrapy.Spider):
 	offset = 0
 	start_urls = [baseURL + str(offset)]
 	def parse(self, response):
-    	#取返回的json数据中的['data'],json.loads?
+    	#取返回的json数据中的['data'],json.loads?.load和磁盘交互，.loads处理字符串
     	# data = json.loads(response.body)
     	# print data
 		data_list = json.loads(response.body)['data']

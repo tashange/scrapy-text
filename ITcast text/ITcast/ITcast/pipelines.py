@@ -11,7 +11,9 @@ class ItcastPipeline(object):
 #初始化保存文件
 	def __init__(self):
 		self.f = open("itcast_pipeline.json","w")
-#接收itcast.py文件的每个item数据并转换dirt字典格式，中文转为encode格式，并返回
+#接收itcast.py文件的每个item数据并转换dirt字典格式，中文转为encode格式，并返回 
+# json.dumps()用于将dict类型的数据转成str，因为如果直接将dict类型的数据写入json文件中会发生报错，
+# 因此在将数据写入时需要用到该函数。
 	def process_item(self, item, spider):
 		content = json.dumps(dict(item),ensure_ascii = False) + ",\n"
 		self.f.write(content.encode("utf-8"))

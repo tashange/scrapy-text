@@ -1,5 +1,6 @@
 # Douyu
 该项目基于scrapy框架
+主要修改了settings.py items.py pipelines.py douyu.py文件
 安装：
 1.直接用集成包进行安装：百度搜索Miniconda，选择对应版本进行安装；一路next
 安装完成后cmd窗口用：conda list 命令检验是否成功安装。
